@@ -6,6 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { FaShoppingCart } from "react-icons/fa";
 import { FcCdLogo } from "react-icons/fc";
+import { Link } from 'react-router-dom';
 
 
 
@@ -13,7 +14,12 @@ function Header() {
   return (
     <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="/"><FcCdLogo fontSize="50px" /></Navbar.Brand>
+          <Navbar.Brand>
+            <Link to={'/'}>
+            <FcCdLogo fontSize="50px" />
+            </Link>
+            
+          </Navbar.Brand>
           <Navbar.Text className='search'>
             <FormControl 
             style={{width: 500}}
@@ -29,7 +35,12 @@ function Header() {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                    <Dropdown.Item href="/cart">Cart is Empty</Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link to={'/cart'}>
+                      Cart is Empty
+                      </Link>
+
+                    </Dropdown.Item>
                 </Dropdown.Menu>
                 </Dropdown>
           </Nav>

@@ -9,6 +9,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Context from './context/Context.jsx';
 
 const router = createBrowserRouter([
   {
@@ -21,10 +22,13 @@ const router = createBrowserRouter([
     element: <Cart />,
     errorElement: <ErrorPage />,
   },
+
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Context>
+      <RouterProvider router={router} />
+    </Context>
   </React.StrictMode>,
 )

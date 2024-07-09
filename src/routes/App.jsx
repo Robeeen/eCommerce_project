@@ -1,10 +1,6 @@
-
-
 import Header from '../components/Header';
-
-import '../App.css'
 import Midpart from '../components/Midpart';
-
+import '../App.css'
 
 
 function App() {
@@ -14,7 +10,7 @@ function App() {
       <Header />     
       <Midpart />
 
-      </>
+    </>
   )
 }
 
