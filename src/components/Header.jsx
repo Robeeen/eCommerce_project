@@ -4,6 +4,7 @@ import FormControl from 'react-bootstrap/FormControl';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Dropdown from 'react-bootstrap/Dropdown';
+import { FaShoppingCart } from "react-icons/fa";
 
 
 
@@ -21,14 +22,13 @@ function Header() {
           </Navbar.Text>
           <Nav>
           <Dropdown>
-                <Dropdown.Toggle variant="success" id="dropdown-basic">
-                    Dropdown Button
+                <Dropdown.Toggle variant="danger" id="dropdown-basic">
+                    <FaShoppingCart color="white" fontsize="25px" style={{marginRight: 10}} />
+                    Cart
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                    <Dropdown.Item href="#/action-1">Cart is Empty</Dropdown.Item>
                 </Dropdown.Menu>
                 </Dropdown>
           </Nav>

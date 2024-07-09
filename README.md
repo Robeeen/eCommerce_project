@@ -9,4 +9,5 @@ Currently, two official plugins are available:
 
 - Installations:
 a. npm install react-bootstrap bootstrap : To install Bootstrap.
-b. 
+b. npm install react-icons  : To install all Icons.
+c. 
