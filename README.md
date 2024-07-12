@@ -12,3 +12,4 @@ a. npm install react-bootstrap bootstrap : To install Bootstrap.
 b. npm install react-icons  : To install all Icons.
 c. npm install react-router-dom : To create Routers/BrowserRouters etc. {important}
 d. npm install @faker-js/faker
+e. 
